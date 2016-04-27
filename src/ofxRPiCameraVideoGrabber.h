@@ -4,7 +4,7 @@
  *  Created by jason van cleave on 6/1/13.
  *
  */
-
+#if defined(TARGET_OPENGLES)
 #pragma once
 
 #include "ofMain.h"
@@ -273,3 +273,4 @@ private:
     OMX_CONFIG_BOOLEANTYPE disableSoftwareSaturationConfig;
 	
 };
+#endif

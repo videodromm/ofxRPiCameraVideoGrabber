@@ -1,6 +1,7 @@
 #ifndef OMX_Maps_h
 #define OMX_Maps_h
 
+#if defined(TARGET_OPENGLES)
 #include "ofMain.h"
 
 #include <IL/OMX_Core.h>
@@ -1462,4 +1463,5 @@ OMX_ERRORTYPE FlushOMXComponent(OMX_HANDLETYPE handle, int port)
     return error;
 }
 
+#endif
 #endif

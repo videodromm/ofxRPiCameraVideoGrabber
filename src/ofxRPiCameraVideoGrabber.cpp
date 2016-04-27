@@ -1,3 +1,4 @@
+#if defined(TARGET_OPENGLES)
 #include "ofxRPiCameraVideoGrabber.h"
 
 #pragma mark SETUP
@@ -1649,4 +1650,4 @@ ofxRPiCameraVideoGrabber::~ofxRPiCameraVideoGrabber()
     close();
 }
 
-
+#endif

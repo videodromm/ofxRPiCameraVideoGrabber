@@ -1,3 +1,4 @@
+#if defined(TARGET_OPENGLES)
 #include "BaseEngine.h"
 
 
@@ -267,3 +268,4 @@ void BaseEngine::writeFile()
     recordedFrameCounter = 0;
 }
 
+#endif

@@ -1,3 +1,4 @@
+#if defined(TARGET_OPENGLES)
 #pragma once
 
 #include "BaseEngine.h"
@@ -35,3 +36,4 @@ private:
     
 
 };
+#endif

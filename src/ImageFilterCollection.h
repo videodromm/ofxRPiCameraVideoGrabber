@@ -2,7 +2,7 @@
  *  ImageFilterCollection.h
  *  Created by jason van cleave on 8/7/13.
  */
-
+#if defined(TARGET_OPENGLES)
 #pragma once
 
 #include "ofMain.h"
@@ -91,3 +91,4 @@ public:
 	string currentFilterName;
 	size_t currentFilterIndex;
 };
+#endif

@@ -1,3 +1,4 @@
+#if defined(TARGET_OPENGLES)
 #pragma once 
 
 #include "ofxRPiCameraVideoGrabber.h"
@@ -41,3 +42,4 @@ public:
     
     vector<ofVideoDevice> unused;
 };
+#endif

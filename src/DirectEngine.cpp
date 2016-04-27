@@ -3,7 +3,7 @@
  
  https://github.com/tjormola/rpi-openmax-demos/
  */
-
+#if defined(TARGET_OPENGLES)
 #include "DirectEngine.h"
 DirectEngine::DirectEngine()
 {
@@ -396,6 +396,4 @@ OMX_ERRORTYPE DirectEngine::encoderFillBufferDone(OMX_IN OMX_HANDLETYPE hCompone
 	return OMX_ErrorNone;
 }
 
-
-
-
+#endif

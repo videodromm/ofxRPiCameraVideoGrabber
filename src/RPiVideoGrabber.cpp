@@ -5,7 +5,7 @@
 //  Created by jason van cleave on 12/20/15.
 //  Copyright © 2015 jason van cleave. All rights reserved.
 //
-
+#if defined(TARGET_OPENGLES)
 #include "RPiVideoGrabber.h"
 
 
@@ -134,3 +134,4 @@ void RPiVideoGrabber::videoSettings()
     ofLogError(__func__) << "not used";
 }
 
+#endif

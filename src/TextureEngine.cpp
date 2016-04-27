@@ -6,7 +6,7 @@
  *  Copyright 2014 jasonvancleave.com. All rights reserved.
  *
  */
-
+#if defined(TARGET_OPENGLES)
 #include "TextureEngine.h"
 
 TextureEngine::TextureEngine()
@@ -520,3 +520,4 @@ TextureEngine::~TextureEngine()
 	}
     ofLogVerbose(__func__) << "END";
 }
+#endif

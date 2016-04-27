@@ -5,7 +5,7 @@
  *  Copyright 2014 jasonvancleave.com. All rights reserved.
  *
  */
-
+#if defined(TARGET_OPENGLES)
 #pragma once
 
 #include "ofMain.h"
@@ -90,3 +90,4 @@ protected:
                          OMX_IN OMX_BUFFERHEADERTYPE*){return OMX_ErrorNone;};
 	
 };
+#endif

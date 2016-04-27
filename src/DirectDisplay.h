@@ -1,3 +1,4 @@
+#if defined(TARGET_OPENGLES)
 #pragma once
 
 #include "ofMain.h"
@@ -242,10 +243,5 @@ public:
         return rotateDisplay((OMX_DISPLAYTRANSFORMTYPE)randomRotation);
     }
 
-    
-    
-    
-    
- 
-               
 };
+#endif
